@@ -1,7 +1,7 @@
 # [Choice] Go version: 1, 1.15, 1.14
 ARG VARIANT=1
 FROM mcr.microsoft.com/vscode/devcontainers/go:dev-${VARIANT}
-
+LABEL "com.docker.devcontainer"="vscode"
 # [Option] Install Node.js
 ARG INSTALL_NODE="true"
 ARG NODE_VERSION="lts/*"
